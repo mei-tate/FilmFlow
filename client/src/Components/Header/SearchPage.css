@@ -1,0 +1,166 @@
+.search-page {
+  padding: 24px 48px;
+  color: white;
+  background: #0f0f0f;
+  min-height: 100vh;
+}
+
+/* Header */
+.search-header h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.search-header span {
+  color: #1ed760;
+}
+
+/* FILTER BAR (Netflix-style panel) */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  padding: 18px 22px;
+  margin-bottom: 36px;
+
+  background: rgba(24, 24, 24, 0.9);
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
+
+  backdrop-filter: blur(10px);
+}
+
+/* Each filter group */
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Labels */
+.filter-group label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a7a7a7;
+  font-weight: 600;
+}
+
+/* Dropdowns */
+.filter-group select {
+  min-width: 170px;
+
+  padding: 10px 14px;
+
+  background: #1f1f1f;
+  color: #fff;
+
+  border: 1px solid #333;
+  border-radius: 10px;
+
+  font-size: 0.95rem;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+/* Hover / focus states */
+.filter-group select:hover {
+  border-color: #555;
+  background: #242424;
+}
+
+.filter-group select:focus {
+  outline: none;
+  border-color: #1ed760;
+  box-shadow: 0 0 0 2px rgba(30, 215, 96, 0.15);
+}
+
+/* Reset button */
+.clear-filters {
+  margin-left: auto;
+  padding: 10px 18px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover red accent */
+.clear-filters:hover {
+  background: #e50914;
+  border-color: #e50914;
+  transform: translateY(-1px);
+}
+
+
+/* Small sized screen */
+@media (max-width: 768px) {
+  .search-page {
+    padding: 16px;
+  }
+
+  .search-header h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Make filter bar horizontal scroll (Netflix-style) */
+  .filter-bar {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    gap: 12px;
+
+    padding: 12px;
+    margin-bottom: 24px;
+
+    border-radius: 12px;
+  }
+
+  /* Hide scrollbar (clean Netflix feel) */
+  .filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Compact filter groups */
+  .filter-group {
+    flex: 0 0 auto;
+    gap: 4px;
+  }
+
+  .filter-group label {
+    font-size: 0.65rem;
+    letter-spacing: 0.8px;
+  }
+
+  .filter-group select {
+    min-width: 120px;
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    border-radius: 8px;
+  }
+
+  /* Smaller reset button */
+  .clear-filters {
+    flex: 0 0 auto;
+    margin-left: auto;
+    width: auto;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+
+    border-radius: 8px;
+  }
+}

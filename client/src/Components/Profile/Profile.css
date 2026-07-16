@@ -1,0 +1,192 @@
+/* ===== Base Container (Spotify-like card) ===== */
+.profile-container {
+  background: #121212;
+  color: #ffffff;
+  width: 520px;
+  margin: 80px auto;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Auth variant */
+.auth-prompt {
+  text-align: center;
+}
+
+/* ===== Titles ===== */
+.profile-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* ===== Spotify Section ===== */
+.spotify-section {
+  background: #181818;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.spotify-connected-text {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+/* ===== Buttons Base ===== */
+.spotify-btn,
+.spotify-btn-base {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 18px;
+  border-radius: 500px;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.logout {
+  width: 92%;
+  margin: 0 auto;
+  background: #282828;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 18px;
+  border-radius: 500px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+.logout:hover {
+  background: #3a3a3a;
+}
+
+/* ===== Green Spotify Action Button ===== */
+.spotify-btn-green {
+  background: #1db954;
+  color: #000;
+}
+
+.spotify-btn-green:hover {
+  background: #1ed760;
+}
+
+/* ===== Dark Buttons (Logout, secondary actions) ===== */
+.spotify-btn-dark {
+  background: #282828;
+  color: #ffffff;
+}
+
+.spotify-btn-dark:hover {
+  background: #1ed760;
+}
+
+/* ===== Auth Buttons Layout ===== */
+.auth-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* Login button (outline style like Spotify secondary CTA) */
+.login-btn {
+  background: transparent;
+  border: 1px solid #b3b3b3;
+  color: #ffffff;
+}
+
+.login-btn:hover {
+  border-color: #ffffff;
+  transform: scale(1.03);
+}
+
+/* Signup button (primary green CTA) */
+.signup-btn {
+  background: #1db954;
+  color: #000;
+}
+
+.signup-btn:hover {
+  background: #1ed760;
+  transform: scale(1.03);
+}
+
+/* ===== Reset Password Link ===== */
+.resetpwd {
+  color: #b3b3b3;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: color 0.2s ease;
+}
+
+.resetpwd:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* ===== Playlist Button ===== */
+.myPlaylists {
+  width: 86%;
+  margin: 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 500px; 
+  background: #1db954;
+  color: #ffffff; 
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.myPlaylists:hover {
+  background: #18df5e;
+}
+
+.webPlayerbtn { 
+  width: 93%;
+  margin: 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 500px; 
+  background: #1db954;
+  color: #ffffff; 
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.webPlayerbtn:hover {
+  background: #18df5e;
+}
+
+/* ===== Small responsive tweak ===== */
+@media (max-width: 600px) {
+  .profile-container {
+    width: 90%;
+    padding: 25px;
+  }
+}

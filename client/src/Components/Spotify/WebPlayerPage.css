@@ -1,0 +1,125 @@
+/* WebPlayerPage.css */
+.webplayer-page {
+  height: 100vh;
+  background: #0a0a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Player Card */
+.webplayer-container {
+  width: 100%;
+  max-width: 380px;
+  background: #121212;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  border: 1px solid #222;
+}
+
+/* Now Playing Section */
+.now-playing {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.album-art {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.track-info {
+  min-width: 0;
+}
+
+.track-info h3 {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 700;
+  color: #fff;
+
+  /* prevents overflow like Spotify */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.track-info p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #b3b3b3;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 12px;
+}
+
+/* Base button */
+.control-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: #1f1f1f;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Make React Icons look clean */
+.control-btn svg {
+  font-size: 20px;
+}
+
+/* Hover */
+.control-btn:hover {
+  background: #2a2a2a;
+  transform: scale(1.08);
+}
+
+/* Play button (Spotify green) */
+.play-btn {
+  width: 54px;
+  height: 54px;
+  background: #1ed760;
+  color: black;
+}
+
+.play-btn svg {
+  font-size: 26px;
+}
+
+.play-btn:hover {
+  background: #1fdf64;
+  transform: scale(1.1);
+}
+
+/* Empty State */
+.no-track {
+  text-align: center;
+  color: #777;
+  font-size: 13px;
+  padding: 24px 0;
+}
+

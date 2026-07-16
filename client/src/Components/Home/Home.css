@@ -1,0 +1,47 @@
+.home{
+  background:#121212;
+  min-height:100vh;
+  color:white;
+}
+
+/* Spotify/Netflix style banner */
+.hero{
+  height:65vh;
+  background:
+   linear-gradient(rgba(0,0,0,.35), rgba(18,18,18,1)),
+   url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1600&q=80');
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.header{
+  max-width:900px;
+  padding:20px;
+}
+
+.hero h1{
+  font-size:4rem;
+  font-weight:800;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:1.2rem;
+  color:#d0d0d0;
+}
+
+.featuredSection{
+  padding:50px 40px;
+}
+
+.featuredSection h2{
+  text-align:center;
+  font-size:2.3rem;
+  margin-bottom:35px;
+}

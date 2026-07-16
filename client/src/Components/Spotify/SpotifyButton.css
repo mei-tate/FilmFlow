@@ -1,0 +1,41 @@
+.spotifyButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 20px;
+  margin-top: 12px;
+
+  background-color: #1db954; /* Spotify green */
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 500px; /* Spotify pill shape */
+
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.spotifyButton:hover {
+  background-color: #1ed760;
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(29, 185, 84, 0.4);
+}
+
+.spotifyButton:active {
+  transform: scale(0.98);
+}
+
+.spotifyButton:disabled {
+  background-color: #2a2a2a;
+  color: #888;
+  cursor: not-allowed;
+  box-shadow: none;
+}

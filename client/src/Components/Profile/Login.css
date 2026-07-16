@@ -1,0 +1,136 @@
+.login {
+  width: 380px;
+  margin: 80px auto;
+  padding: 40px;
+  background: linear-gradient(180deg, #1a1a1a 0%, #121212 100%);
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Title */
+.login h3 {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #fff;
+}
+
+/* Labels */
+.login label {
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #b3b3b3;
+  text-transform: uppercase;
+}
+
+/* Inputs */
+.login input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 14px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background-color: #242424;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.login input::placeholder {
+  color: #777;
+}
+
+.login input:focus {
+  background-color: #2a2a2a;
+  border: 1px solid #1db954;
+  box-shadow: 0 0 0 2px rgba(29, 185, 84, 0.15);
+}
+
+/* Button (primary Spotify green pill) */
+.login button {
+  margin-top: 22px;
+  padding: 14px;
+  border-radius: 999px;
+  border: none;
+  background-color: #1db954;
+  color: #000;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.login button:hover {
+  background-color: #1ed760;
+  transform: scale(1.02);
+}
+
+.login button:active {
+  transform: scale(0.98);
+}
+
+.login button:disabled {
+  background-color: #1a7f3a;
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Error message */
+.error {
+  margin-top: 15px;
+  padding: 10px 12px;
+  background-color: rgba(255, 0, 0, 0.08);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  color: #ff4d4d;
+  border-radius: 8px;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Profile link (Spotify-style secondary button) */
+.profile-link {
+  width: 100%;
+  margin-top: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 14px;
+  border-radius: 999px;
+
+  background: transparent;
+  border: 1px solid #333;
+
+  text-decoration: none;
+  color: #b3b3b3;
+
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+
+  transition: all 0.2s ease;
+}
+
+.profile-link:hover {
+  background: #282828;
+  border-color: #1db954;
+  color: #fff;
+  transform: scale(1.02);
+}
+
+.profile-link:active {
+  transform: scale(0.98);
+}

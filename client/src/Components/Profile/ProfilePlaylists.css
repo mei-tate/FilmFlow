@@ -1,0 +1,164 @@
+.profile-playlists {
+  display: flex;
+  height: 100vh;
+  background: #121212;
+  color: white;
+}
+
+.profile-unConnected{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 60vh; /* gives it vertical presence without full screen */
+  text-align: center;
+
+  color: #b3b3b3;
+  gap: 12px;
+
+}
+
+.playlist-sidebar {
+  width: 320px;
+  overflow-y: auto;
+  border-right: 1px solid #333;
+  padding: 20px;
+}
+
+.playlist-card {
+  width: 100%;
+  background: #1e1e1e;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+  color: white;
+  text-align: left;
+}
+
+.playlist-image{
+ margin: 0;
+}
+
+.playlist-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+}
+
+
+/* RIGHT SIDE */
+.playlist-content {
+  flex: 1;
+  overflow-y: auto;
+
+  background: linear-gradient(
+    to bottom,
+    #2b2b2b 0%,
+    #181818 20%,
+    #121212 100%
+  );
+
+  padding: 32px;
+}
+
+/* PLAYLIST TITLE */
+.playlist-content h2 {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0 0 28px 0;
+  letter-spacing: -1px;
+}
+
+/* TRACK LIST CONTAINER */
+.track-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* SONG ROW */
+.track-row {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 10px 16px;
+  border-radius: 6px;
+
+  cursor: pointer;
+  transition: background 0.15s ease;
+
+  min-height: 72px;
+  width: 100%;
+}
+
+.track-row:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+/* SONG IMAGE */
+.songImage {
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+/* TEXT CONTAINER */
+.track-row > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: center;
+
+  text-align: left;
+  min-width: 0;
+}
+
+/* SONG TITLE */
+.track-row h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ARTIST TEXT */
+.track-row p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #b3b3b3;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* SPOTIFY-LIKE SCROLLBAR */
+.playlist-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.playlist-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.playlist-content::-webkit-scrollbar-thumb {
+  background: #535353;
+}
+
+.playlist-content::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
